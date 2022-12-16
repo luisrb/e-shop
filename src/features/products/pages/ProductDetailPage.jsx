@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import ProductImageContainer from "../containers/ProductImageContainer";
 import { ProductDetailProvider } from "../context/ProductDetailContext";
 import ProductActionsContainer from "./../containers/ProductActionsContainer";
+import ProductDescriptionContainer from "./../containers/ProductDescriptionContainer";
 import "./ProductDetailPage.css";
 
 function ProductDetailPage() {
@@ -17,6 +18,7 @@ function ProductDetailPage() {
         <ProductImageContainer />
 
         <div>
+          <ProductDescriptionContainer />
           <ProductActionsContainer />
         </div>
       </div>

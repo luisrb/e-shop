@@ -1,0 +1,20 @@
+ .product-page__detail {
+     display: grid;
+     grid-template-columns: 1fr;
+     height: auto;
+     gap: 1rem;
+     padding: 3rem;
+ }
+
+ .product-page__detail * {
+     margin: 0;
+ }
+
+ @media (max-width: 768px) {
+
+     .product-page__detail {
+         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+         padding: 3rem 1rem;
+     }
+
+ }
