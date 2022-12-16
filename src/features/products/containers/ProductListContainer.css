@@ -1,0 +1,12 @@
+.product-container {
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: dense;
+    grid-auto-rows: 45vh;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.product-container__no-products {
+    display: grid;
+    justify-items: center;
+}

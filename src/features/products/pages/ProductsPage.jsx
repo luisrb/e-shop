@@ -1,3 +1,4 @@
+import ProductListContainer from "../containers/ProductListContainer";
 import { ProductsProvider } from "../context/ProductsContext";
 import ProductSearcherContainer from "./../containers/ProductSearcherContainer";
 import "./ProductsPage.css";
@@ -7,6 +8,7 @@ function ProductsPage() {
     <div className="products-page">
       <ProductsProvider>
         <ProductSearcherContainer />
+        <ProductListContainer />
       </ProductsProvider>
     </div>
   );
