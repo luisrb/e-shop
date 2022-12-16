@@ -5,6 +5,7 @@ export const routes = [
   {
     path: "/",
     element: <ProductsPage />,
+    breadcrumb: "Home",
   },
   {
     path: "/:id",

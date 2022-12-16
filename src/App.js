@@ -1,5 +1,6 @@
 import { useRoutes } from "react-router-dom";
 import "./App.css";
+import BreadCrumbs from "./components/Breadcrumbs";
 import Header from "./components/Header";
 import { BreadCrumbsProductNameProvider } from "./context/BreadCrumbsProductName";
 import { ShoppingCartProvider } from "./context/ShoppingCart";
@@ -16,7 +17,9 @@ function App() {
   return (
     <div className="App">
       <Providers>
-        <Header />
+        <Header>
+          <BreadCrumbs />
+        </Header>
         {router}
       </Providers>
     </div>
