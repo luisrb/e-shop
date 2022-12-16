@@ -1,0 +1,18 @@
+.product-searcher-container {
+    display: grid;
+    justify-items: end;
+    padding: 1rem 0rem 1rem 1rem;
+}
+
+@media (max-width: 768px) {
+    .product-searcher-container {
+        justify-items: center;
+        padding: 0rem .6rem;
+        margin-bottom: 1rem;
+    }
+
+    input {
+        width: 100%;
+    }
+
+}

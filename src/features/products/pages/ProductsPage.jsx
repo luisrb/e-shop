@@ -1,11 +1,12 @@
 import { ProductsProvider } from "../context/ProductsContext";
+import ProductSearcherContainer from "./../containers/ProductSearcherContainer";
 import "./ProductsPage.css";
 
 function ProductsPage() {
   return (
     <div className="products-page">
       <ProductsProvider>
-        <h1>Product List</h1>
+        <ProductSearcherContainer />
       </ProductsProvider>
     </div>
   );
