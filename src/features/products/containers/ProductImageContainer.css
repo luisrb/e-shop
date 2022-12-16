@@ -1,0 +1,24 @@
+ .product-image-container {
+     min-width: 300px;
+     min-height: 300px;
+     max-height: 500px;
+     justify-self: center;
+ }
+
+ .product-image-container img {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+     grid-auto-flow: dense;
+     width: 100%;
+     height: 100%;
+ }
+
+ @media (max-width: 768px) {
+     .product-image-container {
+         width: 100%;
+         max-width: 400px;
+         max-height: 400px;
+         justify-self: center;
+     }
+
+ }
