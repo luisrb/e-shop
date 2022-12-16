@@ -1,5 +1,5 @@
-import ProductListContainer from "../containers/ProductListContainer";
 import { ProductsProvider } from "../context/ProductsContext";
+import ProductListContainer from "./../containers/ProductListContainer";
 import ProductSearcherContainer from "./../containers/ProductSearcherContainer";
 import "./ProductsPage.css";
 

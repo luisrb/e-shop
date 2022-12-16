@@ -1,0 +1,14 @@
+ .product-page {
+     padding: 1rem;
+     display: grid;
+     grid-auto-flow: dense;
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+     gap: 1rem;
+ }
+
+ .go-back {
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     padding: 1rem;
+ }
