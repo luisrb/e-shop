@@ -1,0 +1,30 @@
+.product-actions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 10rem;
+    gap: 1rem;
+    padding: 0rem 3rem;
+}
+
+.product-actions button {
+    background: #0F0F0F;
+    color: #fff;
+    width: 100%;
+    height: 30%;
+    border-radius: 4px;
+}
+
+.product-actions button:hover {
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    background-color: #353535;
+
+}
+
+@media (max-width: 768px) {
+    .product-actions {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        padding: 0rem 1rem;
+    }
+}

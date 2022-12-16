@@ -1,6 +1,7 @@
 import { RiArrowLeftLine } from "react-icons/ri";
 import { Link, useParams } from "react-router-dom";
 import { ProductDetailProvider } from "../context/ProductDetailContext";
+import ProductActionsContainer from "./../containers/ProductActionsContainer";
 import "./ProductDetailPage.css";
 
 function ProductDetailPage() {
@@ -11,7 +12,11 @@ function ProductDetailPage() {
       <Link to={`/`} className="go-back">
         <RiArrowLeftLine size="30" /> Go back
       </Link>
-      <div className="product-page"></div>
+      <div className="product-page">
+        <div>
+          <ProductActionsContainer />
+        </div>
+      </div>
     </ProductDetailProvider>
   );
 }
