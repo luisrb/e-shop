@@ -9,7 +9,7 @@ function Header({ children }) {
 
   return (
     <header>
-      <Link href="/">
+      <Link to="/">
         <h3>E-Shop</h3>
       </Link>
       <div className="header-breadcrumbs">{children}</div>
