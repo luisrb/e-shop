@@ -5,8 +5,9 @@ This project is an online shop that allows users to browse a catalogue of produc
 The shop has been developed using **React** and makes use of **Axios** to make API calls. An Axios interceptor called ``axios-cache-interceptor`` has been implemented which allows queries to be cached in the browser's local storage. This improves the performance of the application and reduces the load on the server.
 
 ### Installation
-1- Clonar repositorio
-2- Instalar Dependencias ``npm i``
+1- Clone repository
+
+2- Install Dependencies ``npm i``
 
 ## Running the App
 Run the command ``npm run start``. This will start the development server and open the app in your default browser.
