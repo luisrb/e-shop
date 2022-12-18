@@ -1,32 +1,13 @@
 import { createContext } from "react";
-import { removeAccents } from "../../../utils/removeAccents";
 import useProducts from "../hooks/useProducts";
 
 const ProductsContext = createContext();
 
 function ProductsProvider({ children }) {
-  const { products, productsFiltered, setProductsFiltered } = useProducts();
-
-  const handleSearchChange = (value) => {
-    const valueWithoutAccentsAndLowerCase = removeAccents(value).toLowerCase();
-
-    const newProducts = products.filter((product) => {
-      const titleWithoutAccentsAndLowerCase = removeAccents(
-        product.title
-      ).toLowerCase();
-
-      return titleWithoutAccentsAndLowerCase.includes(
-        valueWithoutAccentsAndLowerCase
-      );
-    });
-
-    setProductsFiltered(newProducts);
-  };
+  const { products, handleFilter } = useProducts();
 
   return (
-    <ProductsContext.Provider
-      value={{ products: productsFiltered, filter: handleSearchChange }}
-    >
+    <ProductsContext.Provider value={{ products, filter: handleFilter }}>
       {children}
     </ProductsContext.Provider>
   );
